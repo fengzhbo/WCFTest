@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f42ae34b-586e-4c82-b7a6-4c803cd1465f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://127.0.0.1:3721/DealerService/metadata" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DealerService.wsdl" MetadataType="Wsdl" ID="f2f82a7a-7b04-4eec-98c9-fdfd73c5ea49" SourceId="1" SourceUrl="http://127.0.0.1:3721/DealerService/metadata" />
+    <MetadataFile FileName="metadata.xsd" MetadataType="Schema" ID="9797fd5c-714d-4694-8c2f-d749898683ce" SourceId="1" SourceUrl="http://127.0.0.1:3721/DealerService/metadata?xsd=xsd3" />
+    <MetadataFile FileName="metadata.wsdl" MetadataType="Wsdl" ID="54cc8f1a-e8de-4aa2-9642-94db7c373606" SourceId="1" SourceUrl="http://127.0.0.1:3721/DealerService/metadata?wsdl=wsdl0" />
+    <MetadataFile FileName="metadata1.xsd" MetadataType="Schema" ID="b0b7a992-53b3-4a0e-ae79-5b7464dc1d13" SourceId="1" SourceUrl="http://127.0.0.1:3721/DealerService/metadata?xsd=xsd1" />
+    <MetadataFile FileName="metadata2.xsd" MetadataType="Schema" ID="4c92aaf2-e301-40c3-89b2-46df8aa3004e" SourceId="1" SourceUrl="http://127.0.0.1:3721/DealerService/metadata?xsd=xsd0" />
+    <MetadataFile FileName="metadata3.xsd" MetadataType="Schema" ID="79126bff-4737-49aa-8780-82b9fb863598" SourceId="1" SourceUrl="http://127.0.0.1:3721/DealerService/metadata?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
