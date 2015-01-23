@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\DataSources\WCFTest.Contract.Model.DealerInfo.datasource" />
     <None Include="Service References\WCFService\DealerService.wsdl" />
     <None Include="Service References\WCFService\metadata.wsdl" />
     <None Include="Service References\WCFService\metadata.xsd">
@@ -67,12 +68,15 @@
     <None Include="Service References\WCFService\metadata3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\WCFService\WCFTest.Client.WCFService.DealerInfo.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WCFTest.Contract\WCFTest.Contract.csproj">
+      <Project>{6bd42172-b0d1-472d-8c77-4f762b934cfc}</Project>
+      <Name>WCFTest.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\WCFService\" />
@@ -88,12 +92,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WCFTest.Contract\WCFTest.Contract.csproj">
-      <Project>{6bd42172-b0d1-472d-8c77-4f762b934cfc}</Project>
-      <Name>WCFTest.Contract</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -9,86 +9,23 @@
 //------------------------------------------------------------------------------
 
 namespace WCFTest.Client.WCFService {
-    using System.Runtime.Serialization;
-    using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="DealerInfo", Namespace="http://schemas.datacontract.org/2004/07/WCFTest.Contract.Model")]
-    [System.SerializableAttribute()]
-    public partial class DealerInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int DealerIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DealerShortNameField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int DealerID {
-            get {
-                return this.DealerIDField;
-            }
-            set {
-                if ((this.DealerIDField.Equals(value) != true)) {
-                    this.DealerIDField = value;
-                    this.RaisePropertyChanged("DealerID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string DealerShortName {
-            get {
-                return this.DealerShortNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DealerShortNameField, value) != true)) {
-                    this.DealerShortNameField = value;
-                    this.RaisePropertyChanged("DealerShortName");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://price.yiche.com/", ConfigurationName="WCFService.DeslersService")]
     public interface DeslersService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://price.yiche.com/DeslersService/GetDealer", ReplyAction="http://price.yiche.com/DeslersService/GetDealerResponse")]
-        WCFTest.Client.WCFService.DealerInfo GetDealer(int vendorId);
+        WCFTest.Contract.Model.DealerInfo GetDealer(int vendorId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://price.yiche.com/DeslersService/GetDealer", ReplyAction="http://price.yiche.com/DeslersService/GetDealerResponse")]
-        System.Threading.Tasks.Task<WCFTest.Client.WCFService.DealerInfo> GetDealerAsync(int vendorId);
+        System.Threading.Tasks.Task<WCFTest.Contract.Model.DealerInfo> GetDealerAsync(int vendorId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://price.yiche.com/DeslersService/GetDealers", ReplyAction="http://price.yiche.com/DeslersService/GetDealersResponse")]
-        WCFTest.Client.WCFService.DealerInfo[] GetDealers(int[] vendorIds);
+        WCFTest.Contract.Model.DealerInfo[] GetDealers(int[] vendorIds);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://price.yiche.com/DeslersService/GetDealers", ReplyAction="http://price.yiche.com/DeslersService/GetDealersResponse")]
-        System.Threading.Tasks.Task<WCFTest.Client.WCFService.DealerInfo[]> GetDealersAsync(int[] vendorIds);
+        System.Threading.Tasks.Task<WCFTest.Contract.Model.DealerInfo[]> GetDealersAsync(int[] vendorIds);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -118,19 +55,19 @@ namespace WCFTest.Client.WCFService {
                 base(binding, remoteAddress) {
         }
         
-        public WCFTest.Client.WCFService.DealerInfo GetDealer(int vendorId) {
+        public WCFTest.Contract.Model.DealerInfo GetDealer(int vendorId) {
             return base.Channel.GetDealer(vendorId);
         }
         
-        public System.Threading.Tasks.Task<WCFTest.Client.WCFService.DealerInfo> GetDealerAsync(int vendorId) {
+        public System.Threading.Tasks.Task<WCFTest.Contract.Model.DealerInfo> GetDealerAsync(int vendorId) {
             return base.Channel.GetDealerAsync(vendorId);
         }
         
-        public WCFTest.Client.WCFService.DealerInfo[] GetDealers(int[] vendorIds) {
+        public WCFTest.Contract.Model.DealerInfo[] GetDealers(int[] vendorIds) {
             return base.Channel.GetDealers(vendorIds);
         }
         
-        public System.Threading.Tasks.Task<WCFTest.Client.WCFService.DealerInfo[]> GetDealersAsync(int[] vendorIds) {
+        public System.Threading.Tasks.Task<WCFTest.Contract.Model.DealerInfo[]> GetDealersAsync(int[] vendorIds) {
             return base.Channel.GetDealersAsync(vendorIds);
         }
     }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.Contract", "WCFTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.Host", "WCFTest.Host\WCFTest.Host.csproj", "{3C806BA5-4110-4059-9CA3-D53938905571}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.Web", "WCFTest.Web\WCFTest.Web.csproj", "{9A60E592-9DEB-4ACF-9320-12E918B93EE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3C806BA5-4110-4059-9CA3-D53938905571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C806BA5-4110-4059-9CA3-D53938905571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C806BA5-4110-4059-9CA3-D53938905571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A60E592-9DEB-4ACF-9320-12E918B93EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A60E592-9DEB-4ACF-9320-12E918B93EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A60E592-9DEB-4ACF-9320-12E918B93EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A60E592-9DEB-4ACF-9320-12E918B93EE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
